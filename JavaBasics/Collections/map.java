@@ -10,5 +10,13 @@ public class map {
         for(String name:num.keySet()){
             System.out.println(name+" "+num.get(name));
         }
+        Map<String,Integer> nums= new TreeMap<String,Integer>();
+        nums.put("one",1);
+        nums.put("two",2);
+        nums.put("three",3);
+        System.out.println(nums.keySet());
+        for(String name:nums.keySet()){
+            System.out.println(name+" "+nums.get(name));
+        }
     }
 }
