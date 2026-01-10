@@ -12,7 +12,9 @@ public class stream {
         Stream<Integer> s1= num.stream();
         Stream<Integer> s2=s1.filter(n->n%2==0);
         Stream<Integer> s3=s2.map(n->n*n);
-        s3.forEach(System.out::println);
+        Stream<Integer> s4=s3.sorted();
+        s4.forEach(System.out::println);
+        
         
     }
 }
