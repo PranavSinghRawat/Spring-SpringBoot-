@@ -14,6 +14,12 @@ public class stream {
         Stream<Integer> s3=s2.map(n->n*n);
         Stream<Integer> s4=s3.sorted();
         s4.forEach(System.out::println);
+        List<Integer> num1= new ArrayList<Integer>();
+        num1.add(1);
+        num1.add(2);
+        num1.add(3);
+        num1.add(4);
+        Stream<Integer> s5= num1.stream();  
         
         
     }
