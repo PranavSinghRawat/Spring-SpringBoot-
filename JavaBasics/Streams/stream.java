@@ -16,10 +16,13 @@ public class stream {
         s4.forEach(System.out::println);
         List<Integer> num1= new ArrayList<Integer>();
         num1.add(1);
-        num1.add(2);
-        num1.add(3);
         num1.add(4);
+        num1.add(3);
+        num1.add(2);
         Stream<Integer> s5= num1.stream();  
+        Stream<Integer> s6 = s5.sorted();
+    
+        System.out.print(s6+" ");
         
         
     }
