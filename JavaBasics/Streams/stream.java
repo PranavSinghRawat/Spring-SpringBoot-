@@ -23,6 +23,8 @@ public class stream {
         Stream<Integer> s6 = s5.sorted();
     
         System.out.print(s6+" ");
+        Stream<Integer> s7= num1.stream();
+
         
         
     }
