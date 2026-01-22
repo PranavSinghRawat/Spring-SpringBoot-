@@ -1,5 +1,6 @@
 package JavaBasics.Streams;
 import java.util.*;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;;
 
 public class stream {
@@ -24,6 +25,20 @@ public class stream {
     
         System.out.print(s6+" ");
         Stream<Integer> s7= num1.stream();
+        List<Integer> collected = s7.collect(Collectors.toList());
+        System.out.println("Collected list: " + collected);
+        
+        // Practice: Find sum
+        int sum = num1.stream().mapToInt(Integer::intValue).sum();
+        System.out.println("Sum: " + sum);
+        
+        // Practice: Find average
+        double avg = num1.stream().mapToInt(Integer::intValue).average().orElse(0.0);
+        System.out.println("Average: " + avg);
+        
+        // Practice: Filter and map
+        List<Integer> filtered = num1.stream().filter(n -> n > 2).map(n -> n*2).collect(Collectors.toList());
+        System.out.println("Filtered and mapped: " + filtered);
 
         
         
